@@ -1,0 +1,54 @@
+** start of undefined **
+
+<!DOCHTML>
+<html>
+<head>
+<h1 id="title">Page Title</h1> 
+<p id="description">short page description</p>
+<body>
+<form id="survey-form">
+  <label id="name-label" for="name">Enter Name:</label><br>
+  <input id="name" type="text" placeholder="James Bond" required><br>
+
+  <label id="email-label" for="email">Enter your E-mail:</label><br> 
+  <input id="email" type="email" required placeholder="j.bond@mi6.co.uk"><br>
+
+  <label id="number-label" for="number"> Enter your age: </label><br>
+  <input id="number" type="number" required min="18" max="120" placeholder="007"><br><br>
+
+  <label id="dropdown-label" for="dropdown"> Select </label>
+    <select id="dropdown">
+      <option value="Money">Money</option>
+      <option value="Penny">Penny</option>
+    </select><br><br>
+
+  <p>Choose a car from the options below: </p>
+  <input type="radio" name="car" value="car"><label>Aston Martin</label><br>
+  <input type="radio" name="car" value="car"><label>Beamer</label><br>
+
+  <p>Choose a gadget: </p>
+  <input type="checkbox" value="wire-watch"><label>Wire-Watch</label><br>
+
+  <input type="checkbox"
+  value="dagger-shoe">Dagger-Shoe</label><br>
+
+ <input type="checkbox" value="ejector-seat">       <label>Ejector-Seat</label><br>
+
+<br><label>Licence number:</label><br><textarea id="textarea" placeholder="Licence to kill"></textarea><br>
+
+<br><input type="submit" id="submit" value="submit">
+
+</form>
+</body>
+
+</html>
+
+
+** end of undefined **
+
+** start of undefined **
+
+
+
+** end of undefined **
+
