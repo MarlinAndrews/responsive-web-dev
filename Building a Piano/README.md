@@ -1,0 +1,1 @@
+media queries and pseudo selectors
