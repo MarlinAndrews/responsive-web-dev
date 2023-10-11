@@ -1,0 +1,192 @@
+:root {
+  --primary-color1: #06B5F0;
+  --secondary-color1: #FAC600;
+  --text-color1: #464242;
+  --font-family: Arial, sans-serif;
+}
+
+body{
+  font-family: var(--font-family);
+  line-height: 1.6;
+  margin: 0;
+  padding:0;
+}
+
+header {
+  background-color: var(--primary-color1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 10px;
+}
+
+#header-img {
+  width: 350px;
+  max-width: 100%;
+  max-height: auto;
+}
+
+#nav-bar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#nav-bar li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.nav-link:hover {
+  background-color: var(--secondary-color1); /* Change the background color on hover */
+  border-radius: 3%;
+  
+}
+
+
+@media (max-width: 500px) {
+  header {
+    flex-direction: column; /* Stack items vertically */
+    text-align: center; 
+    padding:20px 0;
+  }
+
+  #nav-bar ul {
+    flex-direction: column; /* Stack navigation links vertically */
+    margin: 0; /* Remove default margin */
+  }
+
+  #nav-bar li {
+    margin-right: 0; /* Remove margin between navigation items */
+    margin-bottom: 10px; /* Add vertical spacing between navigation items */
+  }
+
+  #hero {
+    margin-top: 100px; /* Adjust margin for better spacing */
+  }
+
+  #hero input[type='submit'] {
+    margin: 15px 15px; /* Adjust margin for better spacing */
+  }
+}
+
+#hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height:50px 10px;
+  margin-top: 50px;
+  padding: 20px;
+}
+
+#hero > h2 {
+  margin-bottom: 20px;
+  overflow-wrap: break-word;
+  font-family: var(--font-family);
+  font-size: 1.8rem;
+
+}
+
+#hero input[type='email'] {
+  max-width: 100%;
+  padding: 10px;
+}
+
+#hero input[type='submit'] {
+  max-width: 150px;
+  width: 90%;
+  height: 30px;
+  margin: 15px 0px;
+  border: 0;
+  font-size: 1.2rem;
+  color: var(--text-color1);
+  background-color: var(--secondary-color1);
+}
+
+#hero input[type='submit']:hover {
+  font-weight: bold;
+  transition: background-color 1s;
+}
+
+#email::placeholder {
+    text-align: center; /* Center-align the placeholder text */
+}
+
+
+@media (max-width: 650px) {
+  #hero {
+    margin-top: 120px;
+  }
+}
+
+#features {
+  width: 100%;
+  margin: 20px 0px;
+  padding: 20px;
+  color: var(--text-color1);
+  text-align: center; 
+}
+
+#features h2 {
+  font-size: 1.5rem; 
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  #features {
+    margin: 30px 15px; /* Adjust margin for smaller screens */
+  }
+
+  #features h2 {
+    font-size: 1.2rem; /* Reduce font size for smaller screens */
+  }
+
+}
+
+#business-benefits{
+  width: 100%;
+  margin: 50px 15px;
+  color: var(--text-color1);
+  text-align: center; /* Center-align the text on smaller screens */
+}
+
+.testimonials-container {
+  display: flex;
+  justify-content: space-between; /* Adjust this to control spacing between testimonials */
+  align-items: flex-start; /* Align testimonials at the top of the container */
+  flex-wrap: nowrap; /* Prevent testimonials from wrapping onto the next line */
+  padding: 20px;
+}
+
+.testimonial {
+  width: calc(33.33% - 20px); /* Adjust width and margin as needed */
+  margin: 0 10px;
+  text-align: center;
+  background: #f9f9f9;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+.level {
+  font-weight: bold;
+  color: #555;
+}
+
+h2 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+p {
+  font-size: 1rem;
+}
+
+
