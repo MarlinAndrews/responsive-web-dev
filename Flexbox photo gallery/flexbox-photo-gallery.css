@@ -35,9 +35,18 @@
     height: 300px;
     object-fit: cover;
     border-radius: 10px;
+    transition: width 0.3s ease, height 0.3s ease;
   }
   
   .gallery::after {
     content: "";
     width: 350px;
+  }
+
+  .gallery img:hover{ /* enlarges image when mouse hovers */
+    width: 130%;
+    max-width: 350px;
+    height: 330px;
+    object-fit: cover;
+    border-radius: 10px;
   }
