@@ -16,7 +16,7 @@
   body {
     height: 100vh;
     margin: 0;
-    overflow: hidden;
+    overflow: hidden; /* removes scrolling when re-sizing display */
   }
   
   .background-buildings, .foreground-buildings {
