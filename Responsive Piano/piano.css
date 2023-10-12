@@ -12,7 +12,7 @@ html {
     height: 290px;
     margin: 80px auto;
     padding: 90px 20px 0 20px;
-    position: relative;
+    position: relative; /* reference position for children */
     border-radius: 10px;
   }
   
@@ -37,7 +37,7 @@ html {
   .key.black--key::after {
     background-color: #1d1e22;
     content: "";
-    position: absolute;
+    position: absolute; /* will position to nearest relative */
     left: -18px;
     width: 32px;
     height: 100px;
